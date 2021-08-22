@@ -1,8 +1,108 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn-store {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.btn-show {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.title {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.form {
+  max-width: 17rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.btn-sub {
+  width: 100%;
+  display: inline-block;
+  background-color: green;
+  color: antiquewhite;
+}
+
+.list {
+  background-color: aliceblue;
+  margin: 0.5rem 3rem;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.list_title {
+  color: brown;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+.list_text {
+  color: #cc7a1c;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.list_header {
+  padding-bottom: 2rem;
+}
+
+.book {
+  background-color: maroon;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.book p {
+  padding: 1rem;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }

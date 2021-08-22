@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="/" class="title"><h2>HOME</h2></a>
+        <a href="/articles" class="btn-store">back</a>
+      </div>
+    </header>
+    <section class="book">
+        <h1><%= article.title %> </h1>
+        <h2><%= article.author %> </h2>
+        <p><%= article.tags %></p>
+        <p><%= article.description %></p>
+        <h3>Price: <%= article.likes %></h3>
+    </section>
+    <a href="/articles/<%= article._id %>/likes">
+        <button class="btn-show">Likes</button>
+      </a>
+    <a href="/articles/<%= article._id %>/edit">
+      <button class="btn-show">Edit</button>
+    </a>
+    <a href="/articles/<%= article._id %>/delete">
+      <button class="btn-show">Delete</button>
+    </a>
+    </div>
+  </body>
+</html>
