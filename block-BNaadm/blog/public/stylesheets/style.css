@@ -98,6 +98,33 @@ textarea {
   padding: 1rem;
 }
 
+.comment {
+  max-width: 40rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid wheat;
+  width: 40rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  padding-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.3rem;
+  padding-bottom: 0.6rem;
+}
+
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;

@@ -31,5 +31,33 @@
       <button class="btn-show">Delete</button>
     </a>
     </div>
+    <div class="comment">
+      <form action="/articles/<%= article._id %>/comments" method="POST">
+        <textarea
+          type="text"
+          rows="4"
+          name="text"
+          placeholder="Add Comments"
+        ></textarea>
+        <input type="text" name="author" placeholder="Author">
+        <input type="submit" class="btn-sub" value="Add Comment" />
+      </form>
+     </div>
+     <div class="content">
+      <h2 class="text">Comments</h2>
+      <hr>
+      <% article.comments.forEach(comment => { %>
+  
+            <p><%= comment.text %></p>
+            <p><%= comment.author %></p>
+            <a href="/comments/<%= comment._id %>/edit">
+              <button class="btn-show">Edit</button>
+            </a>
+            <a href="/comments/<%= comment._id %>/delete">
+              <button class="btn-show">Delete</button>
+            </a>
+      <% }) %>
+      
+     </div>
   </body>
 </html>
