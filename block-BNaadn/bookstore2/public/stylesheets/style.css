@@ -1,8 +1,173 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn-store {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.btn-show {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.title {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.form {
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+.btn-sub {
+  width: 100%;
+  display: inline-block;
+  background-color: green;
+  color: antiquewhite;
+}
+
+.list {
+  background-color: rgb(221, 238, 235);
+  margin: 0.5rem auto;
+  padding: 1rem 2rem;
+  text-align: left;
+  max-width: 30rem;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.list_title {
+  color: brown;
+  padding-bottom: 0.5rem;
+}
+
+.list_text {
+  color: hsl(221, 76%, 45%);
+  font-size: 1.3rem;
+}
+
+.list_header {
+  padding-bottom: 2rem;
+}
+
+.book {
+  background-color: maroon;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+
+.book p {
+  padding: 0.5rem;
+  color: #d8b8be;
+  font-size: 1.3rem;
+}
+
+.book h1 {
+  color: #06f506;
+}
+
+.book h2 {
+  color: #dcf7b1;
+  padding-top: 0.4rem;
+}
+
+.book h3 {
+  color: #db9e9e;
+}
+
+.comment {
+  max-width: 34rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid wheat;
+  width: 40rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  padding-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.3rem;
+  padding-bottom: 0.6rem;
+}
+
+.btn-edit {
+  background-color: blue;
+  color: aliceblue;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.btn-delete {
+  background-color: red;
+  color: aliceblue;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  margin-left: 0.5rem;
+}
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
