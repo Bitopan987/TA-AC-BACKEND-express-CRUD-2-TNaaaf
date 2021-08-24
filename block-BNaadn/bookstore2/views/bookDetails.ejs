@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="/" class="title"><h2>Bookstore</h2></a>
+        <a href="/books" class="btn-store">back</a>
+      </div>
+    </header>
+    <section class="book">
+        <h1>Title : <%= book.title %> </h1>
+        <h2>Author : <%= book.author %> </h2>
+        <p><%= book.description %></p>
+        <h3>Price: <%= book.price %></h3>
+    </section>
+    <a href="/books/<%= book._id %>/edit">
+      <button class="btn-show btn-edit">Edit</button>
+    </a>
+    <a href="/books/<%= book._id %>/delete">
+      <button class="btn-show btn-delete">Delete</button>
+    </a>
+    </div>
+   <div class="comment">
+    <form action="/books/<%= book._id %>/comments" method="POST">
+      <textarea
+        type="text"
+        rows="4"
+        name="content"
+        placeholder="Add Comments"
+      ></textarea>
+      <input type="submit" class="btn-sub" value="Add Comment" />
+    </form>
+   </div>
+   <div class="content">
+    <h2 class="text">Comments</h2>
+    <hr>
+    <% book.comments.forEach(c => { %>
+
+          <p><%= c.content %></p>
+          <a href="/comments/<%= c._id %>/edit">
+            <button class="btn-show btn-edit">Edit</button>
+          </a>
+          <a href="/comments/<%= c._id %>/delete">
+            <button class="btn-show btn-delete">Delete</button>
+          </a>
+    <% }) %>
+   </div>
+  </body>
+</html>

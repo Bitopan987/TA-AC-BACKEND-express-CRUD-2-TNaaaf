@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="/" class="title"><h2>Bookstore</h2></a>
+        <a href="/books" class="btn-store">back</a>
+      </div>
+    </header>
+    <div class="form">
+      <h2>Add Book</h2>
+      <form action="/books/<%= book.id %>" method="POST">
+        <input
+          type="text"
+          name="title"
+          placeholder="Add title"
+          value="<%= book.title %>"
+        />
+        <textarea
+          type="text"
+          rows="4"
+          name="description"
+          placeholder="Add description"
+        >
+<%= book.description %></textarea
+        >
+        <input
+          type="number"
+          name="price"
+          placeholder="Add Price"
+          value="<%= book.price %>"
+        />
+        <input
+          type="text"
+          name="author"
+          placeholder="Add Author"
+          value="<%= book.author %>"
+        />
+        <input type="submit" class="btn-sub" value="Update Book" />
+      </form>
+    </div>
+  </body>
+</html>
