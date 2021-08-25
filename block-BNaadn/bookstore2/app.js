@@ -4,10 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-
 var indexRouter = require('./routes/index');
 var booksRouter = require('./routes/books');
-var commentsRouter = require('./routes/comments');
+var authorRouter = require('./routes/author');
 
 mongoose.connect(
   'mongodb://localhost/bookstore2',
@@ -31,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/books', booksRouter);
-app.use('/comments', commentsRouter);
+app.use('/authors', authorRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

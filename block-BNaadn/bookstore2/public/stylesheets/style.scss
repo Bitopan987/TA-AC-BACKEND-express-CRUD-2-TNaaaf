@@ -1,0 +1,153 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+  .home_container {
+    text-align: center;
+  }
+  .container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .home_title {
+    color: #06457c;
+    padding-top: 3rem;
+  }
+
+  .list_title {
+    color: #e26363;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    box-shadow: 0 0 3px 3px #f3f0f0;
+    margin-bottom: 1rem;
+  }
+
+  .list_item {
+    padding: 0.2rem 0;
+    font-size: 1.2rem;
+    color: grey;
+  }
+  .list {
+    margin: 0 auto;
+    max-width: 30rem;
+    section {
+      box-shadow: 0 0 3px 3px #f3f0f0;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0;
+    }
+  }
+  header {
+    background-color: #e26363;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    .title {
+      color: aliceblue;
+    }
+  }
+  .form {
+    background-color: #e26363;
+    margin: 2rem auto;
+    max-width: 30rem;
+    padding: 2rem;
+    border-radius: 7px;
+    .input_handle {
+      display: block;
+      width: 100%;
+      margin: 0.7rem 0;
+      padding: 0.7rem;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+    }
+    h2 {
+      color: white;
+      padding-bottom: 1rem;
+    }
+  }
+  .author {
+    background-color: #e26363;
+    margin: 0 auto;
+    max-width: 30rem;
+    padding: 1.5rem 3rem;
+    margin-top: 2rem;
+    border-radius: 7px;
+    color: aliceblue;
+    input {
+      width: 100%;
+      margin: 0.7rem 0;
+      padding: 0.7rem;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      background-color: #3b3baf;
+      margin: 0.7rem 0;
+      padding: 0.7rem;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      color: aliceblue;
+    }
+  }
+  .book {
+    background-color: #e26363;
+    margin: 0 auto;
+    max-width: 30rem;
+    padding: 1.5rem 3rem;
+    margin-top: 2rem;
+    border-radius: 7px;
+    color: aliceblue;
+    img {
+      width: 100%;
+      height: 20rem;
+    }
+    p {
+      font-size: 1.3rem;
+      padding: 3px;
+    }
+    h2 {
+      font-size: 1.7rem;
+      padding: 0.4rem 0;
+    }
+  }
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    outline: none;
+    &_home {
+      background-color: aliceblue;
+      padding: 0.7rem 1.2rem;
+      border-radius: 7px;
+    }
+    &_add {
+      background-color: aliceblue;
+      padding: 0.7rem 1.2rem;
+      border-radius: 7px;
+    }
+    &_author {
+      margin-right: 1rem;
+    }
+    &_sub {
+      background-color: #2864d3;
+      color: aliceblue;
+      font-size: 1.2rem;
+    }
+  }
+}

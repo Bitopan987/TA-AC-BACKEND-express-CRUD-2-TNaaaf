@@ -3,10 +3,12 @@ var Schema = mongoose.Schema;
 var bookSchema = new Schema(
   {
     title: { type: String, required: true },
-    description: String,
-    price: Number,
-    author: String,
-    comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+    author: { type: Schema.Types.ObjectId, require: true, ref: 'Author' },
+    summary: String,
+    pages: Number,
+    publication: String,
+    cover_image: { type: String, lowercase: true },
+    category: String,
   },
   { timestamps: true }
 );
