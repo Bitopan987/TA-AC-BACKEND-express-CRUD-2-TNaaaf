@@ -16,14 +16,16 @@
         </div>
       </div>
     </header>
-    <section class="book">
-      <img src="<%= book.cover_image %>" alt="" />
-      <h2><%= book.title %></h2>
-      <p><strong>Author </strong> :<%= author.name %></p>
-      <p><strong>Summary</strong> :<%= book.summary %></p>
-      <p><strong>Pages</strong> :<%= book.pages %></p>
-      <p><strong>Category</strong> :<%= book.category %></p>
-      <p><strong>Pub</strong> :<%= book.publication %></p>
+    <section class="author">
+      <h2>Add new Author</h2>
+      <form action="/authors/new" method="POST">
+        <input type="text" placeholder="Enter Name" name="name" />
+        <input type="email" placeholder="Enter Email" name="email" />
+        <input type="text" placeholder="Enter country" name="country" />
+        <a href="#" class=""
+          ><button class="btn" type="submit">Submit</button>
+        </a>
+      </form>
     </section>
   </body>
 </html>
