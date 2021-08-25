@@ -1,0 +1,187 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .home_container {
+  text-align: center;
+}
+
+body .container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+body .home_title {
+  color: #06457c;
+  padding-top: 3rem;
+}
+
+body .list_title {
+  color: #e26363;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  -webkit-box-shadow: 0 0 3px 3px #f3f0f0;
+          box-shadow: 0 0 3px 3px #f3f0f0;
+  margin-bottom: 1rem;
+}
+
+body .list_item {
+  padding: 0.2rem 0;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+body .list {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+body .list section {
+  -webkit-box-shadow: 0 0 3px 3px #f3f0f0;
+          box-shadow: 0 0 3px 3px #f3f0f0;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+body header {
+  background-color: #e26363;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+body .header .title {
+  color: aliceblue;
+}
+
+body .form {
+  background-color: #e26363;
+  margin: 2rem auto;
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 7px;
+}
+
+body .form .input_handle {
+  display: block;
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+body .form h2 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+body .author {
+  background-color: #e26363;
+  margin: 0 auto;
+  max-width: 30rem;
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  border-radius: 7px;
+  color: aliceblue;
+}
+
+body .author input {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+body .author button {
+  width: 100%;
+  background-color: #3b3baf;
+  margin: 0.7rem 0;
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  color: aliceblue;
+}
+
+body .book {
+  background-color: #e26363;
+  margin: 0 auto;
+  max-width: 30rem;
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  border-radius: 7px;
+  color: aliceblue;
+}
+
+body .book img {
+  width: 100%;
+  height: 20rem;
+}
+
+body .book p {
+  font-size: 1.3rem;
+  padding: 3px;
+}
+
+body .book h2 {
+  font-size: 1.7rem;
+  padding: 0.4rem 0;
+}
+
+body .btn {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
+
+body .btn_home {
+  background-color: aliceblue;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+}
+
+body .btn_add {
+  background-color: aliceblue;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+}
+
+body .btn_author {
+  margin-right: 1rem;
+}
+
+body .btn_sub {
+  background-color: #2864d3;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

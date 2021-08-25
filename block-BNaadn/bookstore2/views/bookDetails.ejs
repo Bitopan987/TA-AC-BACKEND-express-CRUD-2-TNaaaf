@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="/" class="title btn"><h2>Bookstore</h2></a>
+          <a href="/books" class="btn_add btn">back</a>
+        </div>
+      </div>
+    </header>
+    <section class="book">
+      <img src="<%= book.cover_image %>" alt="" />
+      <h2><%= book.title %></h2>
+      <p><strong>Author </strong> :<%= author.name %></p>
+      <p><strong>Summary</strong> :<%= book.summary %></p>
+      <p><strong>Pages</strong> :<%= book.pages %></p>
+      <p><strong>Category</strong> :<%= book.category %></p>
+      <p><strong>Pub</strong> :<%= book.publication %></p>
+    </section>
+  </body>
+</html>
